@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Html Form</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Payment form</h1>
+        <br>
+        <h3>Contact Informaation</h3>
+        <p>Required feilds *</p>
+        <div>Name: *<input type="text" name="name" required>
+            <br><br>
+            <div>
+                <fieldset>
+                    <legend>Select Gender *</legend>
+                    Male:<input type="radio" name="gender" required>
+                    Female:<input type="radio" name="gender"required>
+                    Other:<input type="radio" name="gender"required>
+                </fieldset>
+            </div>
+            <br>
+            <p>Address:<textarea name="address" cols"100" rows"5"></textarea></p>
+            <p>Email *:<input type="email" name="email" required></p>
+            <p>Pin Code:<input type="email" name="pcode"></p>
+            <hr>
+        </div>
+        <h3>Payment Information</h3>
+        <p>Card Type: *
+            <select name="card_type"required>
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="master">Master Card</option>
+
+            </select>
+        </p>
+        <p>
+            Card Number: *<input type="number" name="card_num" required>
+        </p>
+        <p>Expiration date: *<input type="date" name="exp_date"required></p>
+        <!-- To Hidden information  we use input type as password-->
+        <p>Cvv: *<input type="password" name="cvv_password" required></p>
+        <br>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+
+</html>
